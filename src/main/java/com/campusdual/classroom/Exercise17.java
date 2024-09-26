@@ -1,15 +1,44 @@
 package com.campusdual.classroom;
 
 public class Exercise17 {
-	public static int[] createEmptyIntArray(int positions) {}
+	public static int[] createEmptyIntArray(int positions) {
 
-	public static String[] createInitializedStringArray() {}
+		//Se crea un array de tipo int de X posiciones
+		int[] intArray = new int[positions];
+		return intArray;
+	}
 
-	public static void populateArray(int[] array, int index, int value) {}
+	public static String[] createInitializedStringArray() {
 
-	public static int arrayLength(int[] array) {}
+		//Se crea un array de tipo String de 3 posiciones
+		String[] stringArray = new String[3];
 
-	public static void showValue(int[] array, int index) {}
+		//Se rellena el array
+		stringArray[0] = "1";
+		stringArray[1] = "2";
+		stringArray[2] = "3";
+		return stringArray;
+	}
+
+	public static void populateArray(int[] array, int index, int value) {
+
+		//Se asigna el valor X a la posicion Y
+		array[index] = value;
+	}
+
+
+	public static int arrayLength(int[] array) {
+
+		//Devuelve el tamaño del array
+		return array.length;
+	}
+
+	public static void showValue(int[] array, int index) {
+
+		//Muestra el valor de X posicion del array
+		System.out.println(array[index]);
+
+	}
 
 	public static void main(String[] args) {
 		int[] intArray = createEmptyIntArray(3);
